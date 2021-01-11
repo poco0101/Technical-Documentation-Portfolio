@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+     <nav class="topnav" id ="navbar">
+  <header> 
+    
+  </header>
+  <a href="#What_is_Technical_Documentation?" class="nav-link">What is Technical Documentation?</a>
+  <a href="#Types_of_Documentation" class="nav-link">Types of Documentation</a>
+  <a href="#What_Makes_for_Great_Technical_Documentation?" class="nav-link">What Makes for Great Technical Documentation?</a>
+  <a href="#Tips_for_Developing_Better_Technical_Documentation" class="nav-link">Tips for Developing Better Technical Documentation</a>
+  <a href="#Writing_Your_Technical_Documentation" class="nav-link">Writing Your Technical Documentation</a>
+
+   </nav>
+  </div>
+
+ </div>
+  <div class="rightcolumn">
+   <div class="header">
+  <h1>Technical Documentation<h1>			
+  
+  </div>
+    <main id="main-doc">
+    <div class="card">
+      <section class ="main-section" id="What_is_Technical_Documentation?">
+      <header>What is Technical Documentation?</header>
+      <code></code>
+     
+      <h5>Technical documentation refers to any document that explains the use, functionality, creation, or architecture of a product.</h5>  
+      <p>Technical documentation is the foundational information about the underlying architecture, materials, and process for interfacing with, or building on top of, existing technology.</p>
+      <p>In software, technical documentation outlines the various API routes and endpoints the developer can access, or it can explain the libraries, integrations, and dependencies of the SDK.</p>
+      <p>Every engineer who has ever written code in any language has referenced technical documentation at one time or another. Even the programming languages themselves have technical documentation.</p>
+      </section>
+    </div>
+   <div class="card">
+      <section class ="main-section" id="Types_of_Documentation">
+      <header>Types of Documentation</header>
+      <code></code>
+      <h5>Some of the various types of documentation include:</h5>
+      <p>End-user documentation:The user manual for everyday customers to understand how the product or app is assembled, used, and more.</p>
+      <p>Requirements documentation: Outlines for a product development team the purpose, goals, and value of a given product, project, or feature.</p>
+      <p>Marketing documentation: Details for marketing teams, both internal and external, the standards and guidelines for communicating with the general public on behalf of the company.</p>
+      </section>
+    </div>
+   <div class="card">
+      <section class ="main-section" id="What_Makes_for_Great_Technical_Documentation?">
+      <header>What Makes for Great Technical Documentation?</header>
+      <h5>Technical documentation shouldn’t require a Ph.D. to understand.</h5>
+      <code></code>
+      <p>Examples:</p>
+       <ol>
+        <li>Easily navigable.</li>
+        <li>Offers sequential steps to reach specific, clear goals as a result of explicit input instruction.s</li>
+        <li>Provides links around pieces of important information that may lead to even more insightful information.</li>
+        <li>Inclusive to beginners: points beginners in a direction to get acquainted with concepts behind information in the docs.</li>
+        <li>Provides opportunities to run code in a built-in virtual IDE.</li>
+       </ol>    
+      <p>Even if your app is intricate and complex, your documentation should be clear and concise, which is easier said than done. One thing that helps make this happen is being as detailed as possible at every step of the way, even if it feels repetitive.</p>
+      <p>You have to give readers an organized way to quickly find information about the features, functions, and resources available to them. This is where a table of contents and active contents outline comes in handy.</p>
+      <p>Another important feature of technical documentation is the version, compatibility, language, and revision date associated with the documentation. This information helps give the reader a quick check to make sure they are in the right place to find solutions to their problems.</p>
+      </section>
+    </div>
+   <div class="card">
+      <section class ="main-section" id="Tips_for_Developing_Better_Technical_Documentation">
+      <header>Tips for Developing Better Technical Documentation</header>
+      <h5>Writing technical documentation is no easy task.</h5>
+      <code></code>   
+      <p>Thankfully, the people with the most knowledge on the subject are those who work with it every day: your team. Unfortunately, having the most knowledge on the subject does not always result in the most easy-to-understand documentation.</p>
+      <p>Let’s cover a few challenges to watch for and resources to include to level up your documentation.</p>
+        <ol>
+        <li>Avoid the Curse of Knowledge</li>
+        <li>Include Screenshots and Screencasts</li>
+        <li>Offer Training</li>
+       </ol>
+      </section>
+   </div>
+   <div class="card">
+      <section class ="main-section" id="Writing_Your_Technical_Documentation">
+      <header>Writing Your Technical Documentation</header>
+      <h5>Proper documentation can help improve user adoption, experience, and retention.</h5>
+      <code></code>
+      <p>Developers will rely on the depth, detail, and accuracy of your technical documentation as the reason to continue using your tools.</p>
+      <p>We’ve taken our own advice to heart in our developer documentation as well as our user documentation. But before you dig into our documentation, sign up for a brief demo to see how our intelligent mobile marketing platform can help you grow, engage, and retain your mobile app users.</p>
+      </section>
+   </div>
+   </main>
+  </div>
+ </div>
+</div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ </body>
+</html>
